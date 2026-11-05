@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this model, please cite it using the metadata below."
+title: "Stars Speck Character Skin V1 Pro"
+type: software
+authors:
+  - name: "Stars Speck"
+version: "1.0-pro"
+date-released: "2026-11-06"
+license: "CC-BY-NC-4.0"
+keywords:
+  - skin segmentation
+  - portrait retouching
+  - human parsing
+  - ONNX
+  - SegFormer

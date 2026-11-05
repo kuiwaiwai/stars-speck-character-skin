@@ -1,0 +1,48 @@
+{
+  "model_name": "Stars Speck Character Skin V1 Pro",
+  "model_id": "stars-speck-character-skin-v1-pro",
+  "series": "Stars Speck",
+  "version": "1.0-pro",
+  "release_stage": "public-pro-release",
+  "task": "visible-human-skin-segmentation",
+  "architecture": "SegFormer-B2",
+  "parameter_count_approx": 27400000,
+  "format": "ONNX",
+  "precision": "FP32",
+  "dynamic_spatial_shape": true,
+  "file": "stars-speck-character-skin-v1-pro-b2-fp32-dynamic.onnx",
+  "file_size_bytes": 109891087,
+  "sha256": "072817eecd40af194d7ea2fc120a649ed4f26f149b6a2f947c0710d0c7cb7b52",
+  "input": {
+    "name": "image",
+    "dtype": "float32",
+    "shape": ["batch", 3, "height", "width"],
+    "color_space": "RGB",
+    "range": [0.0, 1.0],
+    "mean": [0.485, 0.456, 0.406],
+    "std": [0.229, 0.224, 0.225]
+  },
+  "output": {
+    "name": "skin_probability",
+    "dtype": "float32",
+    "shape": ["batch", 1, "height", "width"],
+    "range": [0.0, 1.0],
+    "recommended_threshold": 0.5
+  },
+  "validation": {
+    "iou": 0.8586102398,
+    "dice": 0.9239271596,
+    "precision": 0.9185703605,
+    "recall": 0.9293468033,
+    "small_region_recall": 0.8473403535,
+    "composite_score": 0.8563562625
+  },
+  "training_data_disclosure": {
+    "total_size": "15000+ images",
+    "public_data": "multi-source public portrait and human-understanding data",
+    "private_data": "Stars Speck Portrait",
+    "private_data_size": "3000+ images"
+  },
+  "license": "CC-BY-NC-4.0",
+  "released": "2026-11-06"
+}

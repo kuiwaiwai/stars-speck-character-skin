@@ -1,0 +1,35 @@
+{
+  "purpose": "Openly licensed qualitative examples; not annotated accuracy benchmarks.",
+  "inference_long_edge": 1024,
+  "threshold": 0.5,
+  "examples": [
+    {
+      "input": "images/cc0_fashion_model.jpg",
+      "result": "results/cc0_fashion_model_skinseg.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Fashion_model_portrait.jpg",
+      "creator": "Petr Kratochvil",
+      "license": "CC0-1.0"
+    },
+    {
+      "input": "images/cc0_outdoor_fullbody_woman.jpg",
+      "result": "results/cc0_outdoor_fullbody_woman_skinseg.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Woman_in_shirt_posing_(Unsplash).jpg",
+      "creator": "Jeremy Bishop",
+      "license": "CC0-1.0"
+    },
+    {
+      "input": "images/ccby_sa_modern_group_event.jpg",
+      "result": "results/ccby_sa_modern_group_event_skinseg.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Group_Portrait_at_X.jpg",
+      "creator": "OBS onthemove",
+      "license": "CC-BY-SA-3.0"
+    },
+    {
+      "input": "images/ccby_black_woman_portrait.jpg",
+      "result": "results/ccby_black_woman_portrait_skinseg.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Black_woman_(10584108825).jpg",
+      "creator": "Carlos Ebert",
+      "license": "CC-BY-2.0"
+    }
+  ]
+}
